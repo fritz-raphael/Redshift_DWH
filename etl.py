@@ -94,8 +94,8 @@ def drop_staging_tables(cur, conn):
     print("6.1 Do you want to drop both staging_tables?")
     decision = input("[y / n] > ")
     if decision.lower() == "y":
-        for query in drop_table_queries:
-            table = query.split(r"\s")[4]
+        for query in drop_staging_table_queries:
+            table = query.split(" ")[4]
             print(f"Dropping table '{table}'.")
             cur.execute(query)
             conn.commit()
