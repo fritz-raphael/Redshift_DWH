@@ -10,8 +10,10 @@ def main():
                             .format(*config['CLUSTER'].values()))
     cur = conn.cursor()
 
+
     cur.execute(songplays_per_artist)
     results = cur.fetchall()
+    print("The five artists with most songs played:")
     for row in results:
         print(f"{row}")
 

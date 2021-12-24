@@ -11,8 +11,8 @@ from botocore.exceptions import ClientError
 
 def create_iam_role(iam, IAM_ROLE_NAME):
     """Create a new IAM role and attach policy."""
+    print("\n1.1 Creating a new IAM Role")
     try:
-        print("\n1.1 Creating a new IAM Role")
         dwhRole = iam.create_role(
             Path='/',
             RoleName=IAM_ROLE_NAME,
