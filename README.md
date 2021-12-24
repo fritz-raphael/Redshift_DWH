@@ -130,4 +130,10 @@ To start the ETL-process, navigate to the folder of your files and type `python 
 
 ## 7. How to delete the cluster and the ARN role
 
-To eventually delete both the cluster and the role, type `python delete_cluster_and_role` and confirm both prompts in the terminal. 
+To eventually delete both the cluster and the role, type `python delete_cluster_and_role` and confirm both prompts in the terminal.
+
+## Additional sources
+
+Apart from the [Redshift documentation](https://docs.aws.amazon.com/redshift/index.html), I used this additional resource:
+
+* [Tutorial on how to 'upsert' on AWS Redshift](https://www.kodyaz.com/aws/delete-duplicate-rows-from-amazon-redshift-database-table-using-sql.aspx)
